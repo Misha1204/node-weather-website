@@ -11,7 +11,7 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        `It is currently ${body.current.temp} degress out. There is a ${body.current.wind_speed} wind speed and the humidity is ${body.current.humidity}.`
+        `It is currently ${body.current.temp} degress out. There is a ${body.current.wind_speed}km/h wind speed and the humidity is ${body.current.humidity}%.`
       );
     }
   });
